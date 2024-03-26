@@ -1,6 +1,18 @@
 import Image from "next/image";
+import {createClient} from '@sanity/client'
 
-export default function Home() {
+export const client = createClient({
+  projectId: 'j8u3nucp',
+  dataset: 'production',
+  useCdn: true, // set to `false` to bypass the edge cache
+  apiVersion: 'v2024-03-22', // use current date (YYYY-MM-DD) to target the latest API version
+  // token: process.env.SANITY_SECRET_TOKEN // Only if you want to update content with the client
+})
+
+export default async function Home() {
+  const posts = await client.fetch('*[_type =="navbar"]')
+  console.log(posts,'post')
+
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
@@ -8,6 +20,13 @@ export default function Home() {
           Get started by editing&nbsp;
           <code className="font-mono font-bold">src/app/page.tsx</code>
         </p>
+        {posts.map((item:any)=>{
+          return(
+            <>
+            <div>{item.navName}</div>
+            </>
+          )
+        })}
         <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
           <a
             className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
