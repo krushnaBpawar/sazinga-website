@@ -1,0 +1,420 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@tailwind base;
+@tailwind components;
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  font-smooth: antialiased;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@layer base {
+  p {
+    @apply text-p15 font-normal;
+  }
+
+  h1 {
+    @apply text-h1displayMobile md:text-h1displayTablet lg:text-h1displayLaptop leading-[42px] md:leading-[52px] lg:leading-[62px] font-medium;
+  }
+
+  h2 {
+    @apply text-h2Mobile md:text-h2Tablet lg:text-h2Laptop leading-[32px] md:leading-[38px] lg:leading-[44px] font-medium;
+  }
+
+  h3 {
+    @apply text-h3Mobile md:text-h3Tablet lg:text-h3Laptop leading-[32px] font-semibold;
+  }
+
+  h4 {
+    @apply text-h4Mobile md:text-h4Tablet lg:text-h4Laptop leading-[28px] font-medium;
+  }
+
+  h5 {
+    @apply text-h5Mobile md:text-h5Tablet lg:text-h5Laptop leading-[27px];
+  }
+
+  h6 {
+    @apply text-h6Mobile md:text-h6Tablet lg:text-h6Laptop leading-[24px];
+  }
+
+  li {
+    @apply text-h6Mobile md:text-h6Tablet lg:text-h6Laptop leading-[24px];
+  }
+
+  button {
+    @apply inline-flex items-center gap-2 px-5 py-2 rounded-full text-btn;
+  }
+
+  blockQuote {
+    @apply text-[16px] md:text-[18px] lg:text-[24px] leading-tight;
+  }
+}
+
+.h1display {
+  @apply text-h1displayMobile md:text-h1displayTablet lg:text-h1displayLaptop leading-[42px] md:leading-[52px] lg:leading-[62px] font-medium;
+}
+
+.btn-solid-primary {
+  @apply bg-btn-primary hover:bg-btn-primary-hover text-alt;
+}
+
+.btn-solid-secondary {
+  @apply bg-btn-secondary hover:bg-btn-secondary-hover text-alt;
+}
+
+.btn-solid-alt {
+  @apply bg-btn-alt hover:bg-btn-alt-hover text-heading-primary hover:text-alt;
+}
+
+.btn-text {
+  @apply text-heading-primary;
+}
+
+.arrow-rotate {
+  @apply -rotate-45;
+}
+
+.hover-primary {
+  @apply hover:text-blue-700 border-b-[2px] border-transparent hover:border-blue-700 transition-all duration-200 ease-in-out;
+  /* filter: invert(35%) sepia(42%) saturate(7495%) hue-rotate(579deg); */
+}
+
+.outerContainer {
+  @apply px-[24px] sm:px-[32px] lg:px-[108px];
+}
+
+/* Add this CSS to your stylesheet */
+.scroll-container {
+  overflow-x: hidden;
+  /* Hide horizontal scrollbar */
+  display: flex;
+  gap: 60px;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+/* Hide the scrollbar in WebKit browsers (e.g., Chrome, Safari) */
+.scroll-container::-webkit-scrollbar {
+  width: 0.5rem;
+  /* Set the width of the scrollbar (adjust as needed) */
+}
+
+.scroll-container::-webkit-scrollbar-track {
+  background-color: transparent;
+  /* Set the background color of the track */
+}
+
+.scroll-container::-webkit-scrollbar-thumb {
+  background-color: transparent;
+  /* Set the color of the scrollbar thumb */
+  border-radius: 4px;
+  /* Add some border-radius for a smoother look */
+}
+
+@keyframes spinClockwise {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spinAntiClockwise {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+.spin-clockwise-center {
+  animation: spinClockwise 5s linear infinite;
+  transform-origin: 155px 155px;
+}
+
+.spin-anti-clockwise-center {
+  animation: spinAntiClockwise 5s linear infinite;
+  transform-origin: 155px 155px;
+}
+
+.portableTextContainer h1:last-of-type {
+  margin-bottom: 16px !important;
+  /* Adjust the margin value as needed */
+}
+
+.portableTextContainer h2:last-of-type {
+  margin-bottom: 10px !important;
+  /* Adjust the margin value as needed */
+}
+
+.portableTextContainer h3:last-of-type {
+  margin-bottom: 10px !important;
+  /* Adjust the margin value as needed */
+}
+
+.portableTextContainer h4:last-of-type {
+  margin-bottom: 8px !important;
+  /* Adjust the margin value as needed */
+}
+
+.portableTextContainer h5:last-of-type {
+  margin-bottom: 10px !important;
+  /* Adjust the margin value as needed */
+}
+
+.portableTextContainer h6:last-of-type {
+  margin-bottom: 10px !important;
+  /* Adjust the margin value as needed */
+}
+
+.draggable-false {
+  user-drag: none;
+  -webkit-user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+/* .footernospace div:last-child {
+  margin-bottom: 0 !important;
+}
+.footernospace section:last-child {
+  margin-bottom: 0 !important;
+} */
+
+#flipCardLayout::-webkit-scrollbar {
+  display: none;
+}
+
+#flipCardLayout {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+/* #flipCardLayout div section:nth-child(1) {
+  padding: 30px !important;
+} */
+
+.outerContainer {
+  max-width: 1224px;
+  box-sizing: content-box;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.lg-outercontainer {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  width: 100%;
+}
+
+.lg-outercontainerimg {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Styles for desktop (min-width: 768px) */
+@media only screen and (min-width: 768px) {
+  .lg-outercontainerimg {
+    max-width: 90%;
+    width: 90%;
+  }
+}
+
+/* Styles for mobile (max-width: 767px) */
+@media only screen and (max-width: 767px) {
+  .lg-outercontainerimg {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .lg-outercontainer {
+    max-width: 1224px;
+    box-sizing: content-box;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+ul {
+  list-style: disc;
+  padding-left: 15px;
+}
+
+ol {
+  list-style: decimal;
+}
+
+@media only screen and (max-width: 800px) {
+  .responsiveBanner {
+    margin: 80px 62px;
+  }
+}
+
+.blue-image {
+  filter: invert(48%) sepia(38%) saturate(488%) hue-rotate(521deg);
+}
+
+.tabular:hover .blue-image-hover {
+  filter: invert(48%) sepia(38%) saturate(488%) hue-rotate(521deg);
+}
+
+#getPage>section:last-child {
+  padding-bottom: 90px;
+}
+
+#bannerItem:last-child {
+  background-color: pink;
+  margin-bottom: 0 !important;
+}
+
+#flipCardLayout .twoColumnLayout {
+  padding: 40px 40px 16px 40px !important;
+}
+
+.zcwf_title {
+  display: none !important;
+}
+
+.scrolling-sections-wrapper {
+  width: 100%;
+}
+
+@tailwind utilities;
+
+.scrolling-sections-wrapper {
+  width: 100%;
+}
+
+.fullscreen-wrapper {
+  z-index: 1;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  display: block;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .fullscreen-wrapper {
+    top: 40px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .fullscreen-wrapper {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    top: 160px;
+  }
+}
+
+.special-container {
+  min-height: 40vh;
+  background-color: var(--white);
+  background-image: linear-gradient(to bottom, var(--light) 52%, white);
+  border: 1px solid #e6e6e6;
+  border-radius: 20px;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+/* Hover effect for image-card */
+.image-card-wrapper div {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 200ms;
+}
+
+.image-card-wrapper:hover div {
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+
+.blog-title h1 {
+  font-size: 38px;
+  line-height: 41px;
+}
+
+@media (min-width: 768px) {
+  .lg-outercontainer #video1 {
+    height: 600px;
+    width: 100%;
+    object-fit: contain;
+    display: block;
+  }
+
+  .lg-outercontainer #video2,
+  .lg-outercontainer img {
+    display: none;
+  }
+}
+
+@media (max-width: 769px) {
+  .lg-outercontainer #video1 {
+    height: 300px;
+    width: 100%;
+    object-fit: contain;
+    display: none;
+  }
+
+  .lg-outercontainer #video2,
+  .lg-outercontainer img {
+    display: block;
+  }
+}
+
+.zsiq_clr6 {
+  display: none !important;
+}
+
+.rfm-child img {
+  min-height: 25px;
+  width: auto !important;
+}
+
+.rfm-child {
+  min-width: 150px;
+}
+
+
+/* Custom styles for the buttons */
+.react-multi-carousel-arrow {
+  width: 30px;
+  height: 30px;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+  .react-multiple-carousel__arrow {
+    width: 1px !important;
+    height: 1px !important;
+  }
+
+  .react-multiple-carousel__arrow--right {
+    width: 1px !important;
+    height: 1px !important;
+  }
+
+  .react-multiple-carousel__arrow--left {
+    width: 1px !important;
+    height: 1px !important;
+  }
+}
