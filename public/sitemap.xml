@@ -1,0 +1,275 @@
+<!-- <?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+<url>
+  <loc>https://optimus.tech/</loc>
+  <lastmod>2024-01-11T04:40:15+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://optimus.tech/request-demo</loc>
+  <lastmod>2024-01-11T04:40:15+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://optimus.tech/product</loc>
+  <lastmod>2024-01-11T04:40:15+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://optimus.tech/product/data-preparation</loc>
+  <lastmod>2024-01-11T04:40:15+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://optimus.tech/blogs</loc>
+  <lastmod>2024-01-11T04:40:15+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://optimus.tech/product/reconciliation</loc>
+  <lastmod>2024-01-11T04:40:15+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://optimus.tech/product/ledgers</loc>
+  <lastmod>2024-01-11T04:40:15+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://optimus.tech/product/analytics-reporting</loc>
+  <lastmod>2024-01-11T04:40:15+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://optimus.tech/product/fees-commissions</loc>
+  <lastmod>2024-01-11T04:40:15+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://optimus.tech/retail-commerce</loc>
+  <lastmod>2024-01-11T04:40:15+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://optimus.tech/banks</loc>
+  <lastmod>2024-01-11T04:40:15+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://optimus.tech/e-commerce</loc>
+  <lastmod>2024-01-11T04:40:15+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://optimus.tech/insurance</loc>
+  <lastmod>2024-01-11T04:40:15+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://optimus.tech/i-gaming</loc>
+  <lastmod>2024-01-11T04:40:15+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://optimus.tech/credit-card-reconciliation</loc>
+  <lastmod>2024-01-11T04:40:15+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://optimus.tech/about-us</loc>
+  <lastmod>2024-01-11T04:40:15+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://optimus.tech/careers</loc>
+  <lastmod>2024-01-11T04:40:15+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://optimus.tech/contact</loc>
+  <lastmod>2024-01-11T04:40:15+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://optimus.tech/privacy-notice</loc>
+  <lastmod>2024-01-11T04:40:15+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+<loc>https://optimus.tech/events/paymentsmagnified-2024</loc>
+<lastmod>2024-01-11T04:40:15+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+  <loc>https://optimus.tech/resources</loc>
+  <lastmod>2024-01-11T04:40:15+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+<loc>https://optimus.tech/blog/are-you-counting-the-damage</loc>
+<lastmod>2024-01-11T04:40:15+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+  <loc>https://optimus.tech/blog/where-the-mundane-becomes-extraordinary-with-the-rise-of-modern-reconciliation-systems</loc>
+  <lastmod>2024-01-11T04:40:15+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://optimus.tech/blog/mastering-bank-reconciliation-advanced-strategies-for-financial-practitioners</loc>
+  <lastmod>2024-01-11T04:40:15+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://optimus.tech/blog/7-ways-generative-ai-is-redefining-reconciliation</loc>
+  <lastmod>2024-01-11T04:40:15+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://optimus.tech/blog/revolutionizing-payment-reconciliation-the-power-of-generative-ai</loc>
+  <lastmod>2024-01-11T04:40:15+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://optimus.tech/blog/credit-card-reconciliation-a-global-perspective</loc>
+  <lastmod>2024-01-11T04:40:15+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://optimus.tech/blog/financial-reconciliation-in-insurance-and-why-it-is-important</loc>
+  <lastmod>2024-01-11T04:40:15+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://optimus.tech/blog/deployment-strategies-for-finance-reconciliation-saas-vs-on-premise</loc>
+  <lastmod>2024-01-11T04:40:15+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://optimus.tech/blog/what-is-payment-analytics-and-how-it-influences-business-strategy</loc>
+  <lastmod>2024-01-11T04:40:15+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://optimus.tech/blog/payment-data-preparation-the-foundation-for-payment-reconciliation</loc>
+  <lastmod>2024-01-11T04:40:15+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://optimus.tech/blog/data-management-in-finance-and-payment-back-office-a-comprehensive-guide</loc>
+  <lastmod>2024-01-11T04:40:15+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://optimus.tech/blog/payment-reconciliation-a-crucial-guide-for-retail-businesses</loc>
+  <lastmod>2024-01-11T04:40:15+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://optimus.tech/blog/payment-reconciliation-for-ecommerce-businesses</loc>
+  <lastmod>2024-01-11T04:40:15+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://optimus.tech/blog/streamlining-financial-accuracy-general-ledger-reconciliation</loc>
+  <lastmod>2024-01-11T04:40:15+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://optimus.tech/blog/payment-reconciliation-in-the-digital-age</loc>
+  <lastmod>2024-01-11T04:40:15+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://optimus.tech/blog/why-your-global-payments-stack-needs-a-universal-payment-back-office</loc>
+  <lastmod>2024-01-11T04:40:15+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://optimus.tech/blog/a-beginner-s-guide-to-financial-reconciliation</loc>
+  <lastmod>2024-01-11T04:40:15+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://optimus.tech/blog/how-to-get-more-done-with-less-in-back-office</loc>
+  <lastmod>2024-01-11T04:40:15+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://optimus.tech/blog/7-key-considerations-when-choosing-a-reconciliation-solution</loc>
+  <lastmod>2024-01-11T04:40:15+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://optimus.tech/blog/the-value-of-data-in-a-scaling-fintech</loc>
+  <lastmod>2024-01-11T04:40:15+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://optimus.tech/blog/transaction-level-reconciliation-a-must-have-for-your-business-growth</loc>
+  <lastmod>2024-01-11T04:40:15+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://optimus.tech/blog/there-s-more-to-money-movement-than-just-moving-money</loc>
+  <lastmod>2024-01-11T04:40:15+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://optimus.tech/blog/checkout-challenges-are-discrepancies-slowing-your-e-commerce-growth</loc>
+  <lastmod>2024-01-11T04:40:15+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://optimus.tech/blog/streamlining-cash-flow-cut-payment-reconciliation-delays-instantly</loc>
+  <lastmod>2024-01-11T04:40:15+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://optimus.tech/blog/exploring-the-efficiency-of-automated-balance-sheet-reconciliation</loc>
+  <lastmod>2024-01-11T04:40:15+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://optimus.tech/blog/eliminating-payment-bottlenecks-to-boost-growth-in-ecommerce</loc>
+  <lastmod>2024-01-11T04:40:15+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://optimus.tech/blog/eliminate-reconciliation-delays-streamline-operations-to-boost-efficiency</loc>
+  <lastmod>2024-01-11T04:40:15+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+<loc>https://optimus.tech/resource/chaos-to-clarity-optimus-fintech-transforms-payment-operations-for-telco-carrier</loc>
+<lastmod>2024-01-11T04:40:15+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+  <loc>https://optimus.tech/resource/the-art-of-reconciliation-in-the-digital-era</loc>
+  <lastmod>2024-01-11T04:40:15+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://optimus.tech/resource/the-future-of-financial-automation-optimus-fintech-interview</loc>
+  <lastmod>2024-01-11T04:40:15+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://optimus.tech/resource/optimus-fintech-introduces-ledgers-a-general-ledger-reconciliation-module-to-drive-efficiency</loc>
+  <lastmod>2024-01-11T04:40:15+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://optimus.tech/resource/optimus-fintech-names-daniel-kornitzer-former-paysafe-chief-product-and-business-development
+  </loc>
+  <lastmod>2024-01-11T04:40:15+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+</urlset> -->
