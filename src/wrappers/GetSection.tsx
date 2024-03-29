@@ -3,6 +3,7 @@ import BrandList from "@/molecules/BrandList";
 import BulletPoints from "@/molecules/BulletPoints";
 import ButtonLayout from "@/molecules/ButtonLayout";
 import HeroImage from "@/molecules/HeroImage";
+import FullBgImage from "@/molecules/FullBgImage";
 import ImageCaraousel from "@/molecules/ImageCaraousel";
 import NewImageCaraousel from "@/molecules/NewImageCaraousel";
 import ImageLayout from "@/molecules/ImageLayout";
@@ -89,6 +90,9 @@ export default function GetSection({ onlySingleItem, section: sectionData, subCo
      */
     case section.heroImage: {
       return <HeroImage data={sectionData.heroImage} />;
+    }
+    case section.fullImage:{
+      return <FullBgImage data={sectionData.fullImage}/>
     }
     case section.heroVideo: {
       return <HeroVideo data={sectionData.heroVideo} />;

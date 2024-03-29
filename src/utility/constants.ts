@@ -17,6 +17,7 @@ export enum section {
   newImageCaraousel="NewCarousel",
   imageSlider="Slider",
   heroImage = "Hero Image",
+  fullImage ="Full Image",
   pointers = "Pointers",
   productCard = "Product Cards",
   brandList = "Brand List",

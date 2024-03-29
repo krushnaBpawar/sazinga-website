@@ -29,6 +29,7 @@ export default defineType({
           "NewCarousel",
           "Slider",
           "Hero Image",
+          "Full Image",
           "Normal Image",
           "Pointers",
           "Brand List",
@@ -169,6 +170,24 @@ export default defineType({
       },
       description: "A prominent image displayed in this section.",
       hidden: ({ parent }) => parent.sectionName !== "Hero Image",
+      fields: [
+        {
+          name: "paddingTop",
+          title: "Padding Top",
+          type: "boolean",
+          description: "Include paddingTop in this image?",
+        },
+      ],
+    },
+    {
+      name: "fullImage",
+      title: "Full Image",
+      type: "image",
+      options: {
+        paddingTop: true, // Add your boolean field here
+      },
+      description: "A prominent image displayed in this section.",
+      hidden: ({ parent }) => parent.sectionName !== "Full Image",
       fields: [
         {
           name: "paddingTop",

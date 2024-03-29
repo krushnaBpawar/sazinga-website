@@ -19,7 +19,7 @@ export default function Navbar({ data }: { data: any }) {
     <>
     {/* <h4 className="text-lg bg-gradient-to-r from-[#55b2da] to-[#106ca1] py-4 text-center text-white ">Optimus Fintech at MPE. 
     <a href={url} className="underline ml-2">Learn more.</a></h4> */}
-      <nav className="border-b-2 border-alt sticky top-0 bg-white z-[99] mb-[45px]">
+      <nav className="border-b-2 border-alt sticky top-0 z-[99] bg-custom-blue">
         <div className="outerContainer flex flex-row justify-between items-center py-[10px] ">
           <div className="flex gap-10 items-center">
             <CompanyLogo url={getURL(data?.logo?.asset._ref)?.url()} />
