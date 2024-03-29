@@ -19,6 +19,7 @@ export default defineType({
           "Two Column Layout",
           "Carousel",
           "Hero Image",
+          "Full Image",
           "Pointers",
           "Brand List",
           "Banner",
@@ -63,6 +64,13 @@ export default defineType({
     {
       name: "heroImage",
       title: "Hero Image",
+      type: "image",
+      hidden: ({ parent }: { parent: any }) =>
+        parent.sectionName !== "Hero Image",
+    },
+    {
+      name: "fullImage",
+      title: "Full Image",
       type: "image",
       hidden: ({ parent }: { parent: any }) =>
         parent.sectionName !== "Hero Image",

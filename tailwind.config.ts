@@ -54,6 +54,7 @@ const config: Config = {
         "green-800": "#335015",
         "green-900": "#2B4212",
         "green-950": "#1A280B",
+        'custom-blue': '#0EA2CB',
         // status-green
         "status-green-100": "#A9EBCF",
         "status-green-200": "#85E3BB",

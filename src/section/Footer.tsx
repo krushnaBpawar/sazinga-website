@@ -5,9 +5,9 @@ import CompanyLogo from "@/atoms/CompanyLogo";
 import getURL from "@/utility/getURL";
 
 export default function Footer({ data }: { data: any }) {
-  const leftSection = data?.primaryFooter.leftSection;
-  const rightSection = data?.primaryFooter.rightSection;
-  const addressList = data?.primaryFooter.addressList;
+  const leftSection = data?.primaryFooter?.leftSection;
+  const rightSection = data?.primaryFooter?.rightSection;
+  const addressList = data?.primaryFooter?.addressList;
   const secondaryFooter = data?.secondaryFooter;
   return (
     <>
