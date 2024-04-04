@@ -7,7 +7,7 @@ export default function NavMenuItem({
 }) {
   return (
     <div
-      className="cursor-pointer hover-primary font-medium w-fit"
+      className="cursor-pointer hover-primary font-medium w-fit text-white"
       onClick={onClick && onClick}
     >
       {label}

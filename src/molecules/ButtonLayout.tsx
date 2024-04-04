@@ -22,7 +22,7 @@ export default function ButtonLayout({ data }: ButtonLayoutProps) {
       {data && (
         <div
           className={`flex gap-3 my-6 ${
-            data?.button.buttonLayout == "column"
+            data?.button?.buttonLayout == "column"
               ? "flex-col"
               : "flex-col lg:flex-row"
           } ${
@@ -33,7 +33,7 @@ export default function ButtonLayout({ data }: ButtonLayoutProps) {
               : "mr-auto"
           }`}
         >
-          {data?.button.showprimarybutton && (
+          {data?.button?.showprimarybutton && (
             <Button
               arrow={data?.button.primaryButton.arrow}
               label={data?.button.primaryButton.label}
@@ -41,7 +41,7 @@ export default function ButtonLayout({ data }: ButtonLayoutProps) {
               link={data?.button.primaryButton.link}
             />
           )}
-          {data?.button.showsecondarybutton && (
+          {data?.button?.showsecondarybutton && (
             <Button
               arrow={data?.button.secondaryButton.arrow}
               label={data?.button.secondaryButton.label}

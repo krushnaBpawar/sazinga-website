@@ -17,6 +17,22 @@ export default defineType({
         return rule.required();
       },
     },
+    {
+      name: "bannerBackground",
+      title: "Banner Background",
+      type: "string",
+      options: {
+        list: ["Green", "LightBlue", "DarkBlue", "Blue", "Black", "Secondary", "White", "Transparent", "Alt"],
+      },
+    },
+    {
+      name: "textColor",
+      title: "Text Color",
+      type: "string",
+      options: {
+        list: ["Green", "LightBlue", "DarkBlue", "Blue", "Black", "Secondary", "White", "Transparent", "Alt"],
+      },
+    },
     defineField({
       name: "fieldId",
       title: "Section Id",

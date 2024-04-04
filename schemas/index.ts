@@ -20,6 +20,8 @@ import oneColumnLayout from "@files/schemas/oneColumnLayout";
 import page from "@files/schemas/page/page";
 import pointer from "@files/schemas/pointers/pointer";
 import pointerSection from "@files/schemas/pointers/pointerSection";
+import cardSection from "@files/schemas/cards/cardSection";
+import card from '@files/schemas/cards/card';
 import productCard from "@files/schemas/product/productCards";
 import productCardsSection from "@files/schemas/product/productCardsSection";
 import allResources from "@files/schemas/resources/allResources";
@@ -46,6 +48,8 @@ export const schemaTypes = [
   twoColumnLayout,
   pointer,
   pointerSection,
+  card,
+  cardSection,
   productCard,
   productCardsSection,
   brandList,
