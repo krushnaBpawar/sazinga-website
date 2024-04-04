@@ -47,7 +47,9 @@ export enum colors {
   Black = "#171717",
   Transparent = "transparent",
   Alt = "#EAECF5",
-  back="#000000"
+  back="#000000",
+  Gray='#F5F5F5',
+  FintBlue='#0EA2CB',
 }
 
 export enum dialogType {

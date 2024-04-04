@@ -212,6 +212,12 @@ html {
   margin-left: auto;
   margin-right: auto;
 }
+.outerContainer-one {
+  max-width: 1090px;
+  box-sizing: content-box;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 .lg-outercontainer {
   margin-left: auto;

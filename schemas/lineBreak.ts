@@ -20,6 +20,7 @@ export default defineType({
           "Secondary",
           "White",
           "Transparent",
+          "Gray"
         ],
       },
     }),

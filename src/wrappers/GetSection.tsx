@@ -240,6 +240,7 @@ export default function GetSection({ onlySingleItem, section: sectionData, subCo
         <TwoColumnLayout
           sectionId={sectionData.twoColumnLayout?.fieldId}
           onlySingleItem={onlySingleItem}
+          textbackground={sectionData.twoColumnLayout?.textColor}
           background={sectionData.twoColumnLayout?.layoutBackground}
           containerClassName={`${getAlignment(sectionData.twoColumnLayout?.verticalAlign, sectionData.twoColumnLayout?.horizontalAlign)} ${
             sectionData.twoColumnLayout?.layoutShadow ? (subComponent ? "shadow-lg p-[24px] rounded-[6px]" : "shadow-lg") : undefined

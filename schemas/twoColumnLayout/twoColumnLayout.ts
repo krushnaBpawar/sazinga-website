@@ -20,10 +20,19 @@ export default defineType({
           "White",
           "Transparent",
           "Alt",
+          "FintBlue"
         ],
       },
       description: "Background color of the two-column layout.",
     }),
+    {
+      name: "textColor",
+      title: "Text Color",
+      type: "string",
+      options: {
+        list: ["Green", "LightBlue", "DarkBlue", "Blue", "Black", "Secondary", "White", "Transparent", "Alt"],
+      },
+    },
     defineField({
       name: "fieldId",
       title: "Section Id",

@@ -13,6 +13,7 @@ type TwoColumnLayoutProps = {
   showLeftSection?: boolean;
   showRightSection?: boolean;
   onlySingleItem?: boolean;
+  textbackground:string;
 };
 export default function TwoColumnLayout({
   subComponent,
@@ -25,7 +26,9 @@ export default function TwoColumnLayout({
   isReverse = false,
   background = "transparent",
   onlySingleItem,
+  textbackground
 }: TwoColumnLayoutProps) {
+
   return (
     <section
       id={sectionId}
@@ -34,12 +37,15 @@ export default function TwoColumnLayout({
           ? onlySingleItem
             ? undefined
             : "pb-[60px]"
-          : "outerContainer py-[45px]"
+          : "outerContainer-one py-[45px]"
       }
     >
       <div
         style={{
+          borderRadius: "10px",
+          padding:"20px",
           backgroundColor: colors[background as keyof typeof colors],
+          color: colors[textbackground as keyof typeof colors],
         }}
         className={`twoColumnLayout flex w-full gap-6 md:gap-[104px] ${
           isReverse
