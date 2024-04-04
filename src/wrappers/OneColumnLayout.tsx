@@ -1,5 +1,5 @@
 import React from "react";
-
+import { colors } from "@/utility/constants";
 import { alignItem } from "@/utility/helperFunction";
 
 type OneColumnLayoutProps = {
@@ -21,6 +21,7 @@ export default function OneColumnLayout({
   onlySingleItem,
   background = "transparent",
 }: OneColumnLayoutProps) {
+console.log(background,'background--------')
   return (
     <section
       id={sectionId}
@@ -31,6 +32,13 @@ export default function OneColumnLayout({
             : "py-[15px]"
           : "outerContainer py-[45px]"
       }`}
+      style={{
+        margin:"30px",
+    borderRadius: "10px",
+        backgroundColor: colors[background?.oneColumnLayout?.bannerBackground as keyof typeof colors],
+        color: colors[background?.oneColumnLayout?.textColor as keyof typeof colors],
+
+      }}
     >
       <div
         className={`flex ${alignItem(

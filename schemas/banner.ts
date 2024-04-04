@@ -190,6 +190,13 @@ const banner: SanitySchema = {
                   type: "string",
                 },
                 {
+                  name: "content",
+                  title: "Content",
+                  type: "array",
+                  of: portableTextSchema,
+                  description: "Text content for this block.",
+                },
+                {
                   name: "textPosition",
                   title: "Text Position",
                   type: "string",

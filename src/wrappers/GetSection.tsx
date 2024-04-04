@@ -36,6 +36,7 @@ import { getAlignment } from "@/utility/helperFunction";
 import OneColumnLayout from "@/wrappers/OneColumnLayout";
 import TwoColumnLayout from "@/wrappers/TwoColumnLayout";
 import ImageSlider from "@/molecules/ImageSlider";
+import CardSection from "@/section/CardSection";
 
 export default function GetSection({ onlySingleItem, section: sectionData, subComponent }: { section: any; subComponent: boolean; onlySingleItem?: boolean }) {
   switch (sectionData.sectionName) {
@@ -158,6 +159,18 @@ export default function GetSection({ onlySingleItem, section: sectionData, subCo
         />
       );
     }
+
+    case section.cards: {
+      return (
+        <CardSection
+          subComponent={subComponent}
+          containerClassName={`${sectionData?.verticalAlign === "center" ? "my-auto" : sectionData?.verticalAlign === "top" ? "mb-auto" : "mt-auto"} ${
+            sectionData?.horizontalAlign === "center" ? "sm:mx-auto" : sectionData?.horizontalAlign === "right" ? "lg:ml-auto" : "lg:mr-auto"
+          }`}
+          data={sectionData.cardLayout}
+        />
+      );
+    }
     /**
      * product card section
      */
@@ -210,6 +223,7 @@ export default function GetSection({ onlySingleItem, section: sectionData, subCo
     case section.oneColumnLayout: {
       return (
         <OneColumnLayout
+          background={sectionData}
           sectionId={sectionData.oneColumnLayout?.fieldId}
           onlySingleItem={onlySingleItem}
           subComponent={subComponent}

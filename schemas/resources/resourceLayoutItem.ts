@@ -21,6 +21,7 @@ export default defineType({
           "Hero Image",
           "Full Image",
           "Pointers",
+          "Cards",
           "Brand List",
           "Banner",
           "Footer",
@@ -88,6 +89,13 @@ export default defineType({
       type: "pointerSection",
       hidden: ({ parent }: { parent: any }) =>
         parent.sectionName !== "Pointers",
+    },
+    {
+      name: "cardLayout",
+      title: "card Layout",
+      type: "cardSection",
+      description: "Key pointers or highlights for this section.",
+      hidden: ({ parent }) => parent.sectionName !== "Cards",
     },
     {
       name: "brandList",

@@ -16,15 +16,15 @@ export default function Footer({ data }: { data: any }) {
           {data?.showPrimaryFooter && (
             <div className="outerContainer flex flex-col md:flex-row flex-wrap items-start justify-between mx-auto pb-16 pt-[90px]">
               <div className="flex flex-col w-full lg:w-[45%] xl:w-[30%]">
-                <CompanyLogo url={getURL(leftSection.logo.asset._ref)?.url()} />
-                <p className="text-p16 w-[75%] mt-4 text-400">{leftSection.description}</p>
-                <a href={`mailto:${leftSection.email}`} className="text-p16 mt-4 text-400">
-                  {leftSection.email}
+                <CompanyLogo url={getURL(leftSection?.logo.asset._ref)?.url()} />
+                <p className="text-p16 w-[75%] mt-4 text-400">{leftSection?.description}</p>
+                <a href={`mailto:${leftSection?.email}`} className="text-p16 mt-4 text-400">
+                  {leftSection?.email}
                 </a>
                 {/* <p className="text-p16 mt-4 text-400">{leftSection.phone}</p> */}
               </div>
               <div className="flex flex-col sm:flex-row flex-wrap sm:justify-between xl:justify-evenly w-full lg:w-[55%] xl:w-5/12 gap-6 mt-6 lg:mt-0">
-                {rightSection.map((item: any) => {
+                {rightSection?.map((item: any) => {
                   return (
                     <div key={item._key} className="flex flex-col font-medium gap-1">
                       <h6 className="text-p17 mb-2">{item.title}</h6>
@@ -40,9 +40,9 @@ export default function Footer({ data }: { data: any }) {
                 })}
               </div>
               <div className="flex flex-col gap-1 w-full xl:w-[25%] font-medium mt-9 xl:mt-0">
-                <h6 className="text-p17 mb-2">{addressList.title}</h6>
+                <h6 className="text-p17 mb-2">{addressList?.title}</h6>
                 <ul className="addressList list-none p-0">
-                  {addressList.addresses.map((element: any) => {
+                  {addressList?.addresses.map((element: any) => {
                     return (
                       <li key={element._key} className="flex items-start gap-2 mb-3 ">
                         <Image src="/map-marker.svg" width={16} height={16} alt="Location" className="h-4 w-4 mt-[5px]" />

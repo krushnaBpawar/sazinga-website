@@ -32,6 +32,7 @@ export default defineType({
           "Full Image",
           "Normal Image",
           "Pointers",
+          "Cards",
           "Brand List",
           "Banner",
           "Footer",
@@ -79,6 +80,13 @@ export default defineType({
           name: "description",
           title: "Description",
           type: "string",
+        },
+        {
+          name: "content",
+          title: "Content",
+          type: "array",
+          of: portableTextSchema,
+          description: "Text content for this block.",
         },
         {
           name: "textPosition",
@@ -246,6 +254,13 @@ export default defineType({
       type: "pointerSection",
       description: "Key pointers or highlights for this section.",
       hidden: ({ parent }) => parent.sectionName !== "Pointers",
+    },
+    {
+      name: "cardLayout",
+      title: "card Layout",
+      type: "cardSection",
+      description: "Key pointers or highlights for this section.",
+      hidden: ({ parent }) => parent.sectionName !== "Cards",
     },
     {
       name: "brandList",
