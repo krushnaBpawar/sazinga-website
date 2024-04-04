@@ -18,7 +18,7 @@ const banner: SanitySchema = {
       title: "Banner Background",
       type: "string",
       options: {
-        list: ["Green", "LightBlue", "DarkBlue", "Blue", "Black", "Secondary", "White", "Transparent", "Alt"],
+        list: ["Green", "LightBlue", "DarkBlue", "Blue", "Black", "Secondary", "White", "Transparent", "Alt","Gray"],
       },
     },
     {

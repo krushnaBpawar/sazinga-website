@@ -21,7 +21,6 @@ export default function OneColumnLayout({
   onlySingleItem,
   background = "transparent",
 }: OneColumnLayoutProps) {
-console.log(background,'background--------')
   return (
     <section
       id={sectionId}
