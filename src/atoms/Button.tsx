@@ -35,18 +35,18 @@ export default function Button({
     imageUrl = getURL((icon as any).asset._ref);
   }
 
-  const googletag = () => {
-    ga.event({
-      action: "link",
-      params: {
-        link
-      }
-    })
-  }
+  // const googletag = () => {
+  //   ga.event({
+  //     action: "link",
+  //     params: {
+  //       link
+  //     }
+  //   })
+  // }
 
   if (link) {
     return (
-      <Link href={link} onClick={googletag}>
+      <Link href={link} >
         <button id="purchase"
           className={
             "w-fit " + (type === "solid" ? "btn-solid-primary" : "px-2")

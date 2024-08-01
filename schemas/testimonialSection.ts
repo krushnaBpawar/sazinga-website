@@ -3,7 +3,7 @@ import { defineArrayMember, defineField, Rule } from "sanity";
 
 import { SanitySchema } from "@/utility/types";
 
-// schemas/pointer.js
+// schemas/.js
 const testimonialSection: SanitySchema = {
   name: "testimonialSection",
   title: "Testimonial Section",

@@ -34,6 +34,7 @@ const brandList: SanitySchema = {
           "White",
           "Transparent",
           "Alt",
+          "Yellow",
         ],
       },
       validation: (rule) => rule.required(),

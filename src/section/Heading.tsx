@@ -34,13 +34,15 @@ type HeadingProps = {
 export default function Heading({
   data,
   subComponent,
+  sectionId,
 }: {
   data: HeadingProps;
   subComponent?: boolean;
+  sectionId:any
 }) {
   const TitleElement = data?.headingType || "h1";
   return (
-    <section className={subComponent ? "" : "py-[45px] outerContainer"}>
+    <section className={subComponent ? "" : "py-[45px] outerContainer"} id={sectionId}>
       {data && (
         <div
           className={`flex flex-col ${positionHZ[data?.horizontalAlign]}

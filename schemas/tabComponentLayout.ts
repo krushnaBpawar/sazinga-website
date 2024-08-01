@@ -32,6 +32,12 @@ export default defineType({
           type: "object",
           fields: [
             {
+              name: "headingName",
+              title: "Heading Name",
+              type: "string",
+              description: "The main heading for the dialog box content.",
+            },
+            {
               name: "tabName",
               title: "Tab Name",
               type: "string",

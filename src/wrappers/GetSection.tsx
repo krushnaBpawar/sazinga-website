@@ -37,6 +37,9 @@ import OneColumnLayout from "@/wrappers/OneColumnLayout";
 import TwoColumnLayout from "@/wrappers/TwoColumnLayout";
 import ImageSlider from "@/molecules/ImageSlider";
 import CardSection from "@/section/CardSection";
+import IntegrateVerticalTabContentLayout from "@/section/IntegrateVerticalTabContentLayout";
+import NewTabComponentLayout from "@/section/NewTabComponentLayout";
+import InnerTabComponentLayout from "@/section/InnerTabComponentLayout";
 
 export default function GetSection({ onlySingleItem, section: sectionData, subComponent }: { section: any; subComponent: boolean; onlySingleItem?: boolean }) {
   switch (sectionData.sectionName) {
@@ -60,7 +63,7 @@ export default function GetSection({ onlySingleItem, section: sectionData, subCo
      * heading
      */
     case section.heading: {
-      return <Heading subComponent={subComponent} data={sectionData.heading} />;
+      return <Heading subComponent={subComponent} data={sectionData.heading} sectionId={sectionData.heading?.fieldId} />;
     }
     /**
      * banner
@@ -125,6 +128,28 @@ export default function GetSection({ onlySingleItem, section: sectionData, subCo
     case section.verticalTabComponentLayout: {
       return <VerticalTabContentLayout data={sectionData.verticalTabComponentLayout} />;
     }
+    /*
+    *integrate vertical tab content layout
+    */
+    case section.integrateverticalTabComponentLayout: {
+      return <IntegrateVerticalTabContentLayout data={sectionData.integrateverticalTabComponentLayout} />;
+    }
+    /*
+    *
+     *new Tab component content layout
+     * 
+     */
+    case section.newTabComponentLayout: {
+      return <NewTabComponentLayout data={sectionData.newTabComponentLayout} />;
+    }
+    /*
+    * Inner tab component layout
+     */
+
+    case section.innerTabComponentLayout: {
+      return <InnerTabComponentLayout data={sectionData.innerTabComponentLayout} />;
+    }
+    
     /**
      * bullet points
      */

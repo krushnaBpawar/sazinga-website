@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 const POPUP_DISPLAYED_KEY = "popupDisplayed";
 
 export default function GetPage({ data }: { data: any }) {
+  console.log(data,'data')
   const [showPopup, setShowPopup] = useState(false);
 
   const handleClose = () => {

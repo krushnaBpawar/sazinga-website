@@ -3,7 +3,6 @@ import type { SanityDocument } from "@sanity/client";
 import { GetStaticPaths, GetStaticProps } from "next";
 import { useRouter } from "next/router";
 import { groq } from "next-sanity";
-
 import Loader from "@/atoms/Loader";
 import SEO from "@/atoms/SEO";
 import PreviewProvider from "@/lib/PreviewProvider";
@@ -88,6 +87,8 @@ export const getStaticProps: GetStaticProps = async (context) => {
       page = await client.fetch("*[_id == $refId][0]", {
         refId: resourceData?.layout?._ref,
       });
+      console.log('slung page if condition', page);
+      
       if (!page) {
         throw new Error("Not found");
       }
@@ -113,6 +114,8 @@ export const getStaticProps: GetStaticProps = async (context) => {
       page = await client.fetch("*[_id == $refId][0]", {
         refId: blogData?.layout?._ref,
       });
+      console.log('slung page else if condition', page);
+
       if (!page) throw new Error("Not found");
 
       const pageSections = page.sections.map((section) => {
@@ -148,6 +151,8 @@ export const getStaticProps: GetStaticProps = async (context) => {
         groq`*[_type == "page" && slug.current == $slug][0]`,
         { slug: slugs ? slugs.join("/") : "/" }
       );
+      console.log('slung page else condition', page);
+
       if (!page) throw new Error("Not found");
     } catch (err) {
       return {
@@ -251,7 +256,7 @@ export default function Page({
       </PreviewProvider>
     );
   }
-
+  console.log(page,'ajay')
   return (
     <>
       <SEO

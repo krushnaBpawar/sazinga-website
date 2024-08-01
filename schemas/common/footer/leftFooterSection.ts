@@ -36,18 +36,18 @@ export default defineType({
       validation: (Rule: Rule) =>
         Rule.required().email().error("Please provide a valid email address."),
     },
-    // {
-    //   name: "phone",
-    //   title: "📞 Phone",
-    //   type: "string",
-    //   description:
-    //     "Provide a direct contact number. This makes it easier for visitors or clients to reach out quickly.",
-    //   validation: (Rule: Rule) =>
-    //     Rule.required()
-    //       .regex(/^[+\d][\d\s\-()]*$/)
-    //       .error(
-    //         "Enter a valid phone number. It can include numbers, spaces, dashes, and parentheses."
-    //       ),
-    // },
+    {
+      name: "phone",
+      title: "📞 Phone",
+      type: "string",
+      description:
+        "Provide a direct contact number. This makes it easier for visitors or clients to reach out quickly.",
+      validation: (Rule: Rule) =>
+        Rule.required()
+          .regex(/^[+\d][\d\s\-()]*$/)
+          .error(
+            "Enter a valid phone number. It can include numbers, spaces, dashes, and parentheses."
+          ),
+    },
   ],
 });

@@ -28,7 +28,7 @@ export default defineType({
           title: "Alternative text",
           description:
             "Describe the image for SEO and accessibility. Typically, this might describe the author's appearance or setting.",
-          validation: (rule) => rule.required().max(200),
+          validation: (rule:any) => rule.required().max(200),
         },
       ],
       validation: (rule) => rule.required(),

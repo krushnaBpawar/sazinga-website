@@ -35,21 +35,27 @@ export enum section {
   blogPost = "Blog Post",
   resourceItem = "Resource Items",
   formEmbbed = "Form Embbed",
+  integrateverticalTabComponentLayout="Integrate Vertial Tab Component Layout",
+  newIntegrateverticalTabComponentLayout="New Integrate Vertial Tab Component Layout",
+  newTabComponentLayout = "newTabComponentLayout",
+  innerTabComponentLayout = "Inner Tab Component Layout",
 }
 
 export enum colors {
   White = "#FFFFFF",
   Secondary = "#0D0F1C",
   LightBlue = "#E7F3F8",
+  Yellow = '#DAA520',
   Blue = "#B6DAEA",
   DarkBlue = "#D1E0FF",
-  Green = "#B8F5E6",
+  Green = "#0f3d0f",
   Black = "#171717",
   Transparent = "transparent",
   Alt = "#EAECF5",
   back="#000000",
   Gray='#F5F5F5',
   FintBlue='#0EA2CB',
+  DarkPink='#b11e44',
 }
 
 export enum dialogType {

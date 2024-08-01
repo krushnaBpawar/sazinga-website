@@ -34,7 +34,7 @@ export default defineType({
     },
     defineField({
       name: "listOfpointers",
-      title: "List Of Pointers",
+      title: "List Of s",
       type: "array",
       of: [{ type: "card" }], // Reference the pointer schema here
     }),

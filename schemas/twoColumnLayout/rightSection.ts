@@ -1,6 +1,6 @@
 import { buttonSchema } from "@files/schemas/common/buttonSchema";
 import { portableTextSchema } from "@files/schemas/common/portableTextSchema";
-import { defineType } from "sanity";
+import { defineField, defineType } from "sanity";
 
 // schemas/pointer.js
 export default defineType({
@@ -183,6 +183,12 @@ export default defineType({
                   },
                   description: "Select the heading type",
                 },
+                defineField({
+                  name: "fieldId",
+                  title: "Section Id",
+                  type: "string",
+                  description: "Unique identifier for the two-column layout.",
+                }),
                 {
                   name: "description",
                   title: "Description",

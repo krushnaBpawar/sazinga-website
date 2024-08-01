@@ -35,7 +35,8 @@ export default function Banner({ data }: BannerProps) {
         // margin: `${data?.bannerMargin ? "80px 108px" : null}`,
         backgroundColor: colors[data?.bannerBackground as keyof typeof colors],
       }}
-      className={`py-[45px] lg:py-[90px] my-[45px] ${
+      className={`py-[45px] lg:py-[90px]${
+        // my-[45px] 
         data?.bannerMargin
           ? "mx-[24px] sm:mx-[32px] lg:mx-[108px] px-[24px] sm:px-[32px] lg:px-[90px] max-w-[1224px] 2xl:mx-auto"
           : ""

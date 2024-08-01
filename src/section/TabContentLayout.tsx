@@ -35,7 +35,7 @@ export default function TabContentLayout({ data }: { data: any }) {
     <div className="outerContainer pb-[45px] relative"> 
       <div className="flex overflow-x-scroll scroll-container mt-0 whitespace-nowrap justify-start gap-[36px] md:gap-[38px] lg:gap-[60px]" ref={containerRef}>
         {data &&
-          data?.tabComponentItems.map((item: any, index: number) => (
+          data?.tabComponentItems?.map((item: any, index: number) => (
             <div
               key={`${index}-tabItems`}
               className={`flex tabular relative items-center gap-[5px] cursor-pointer hover-primary font-medium min-w-fit pb-1 ${data?.tabComponentItems[selectedTab].tabName === item.tabName ? "text-blue-700 border-blue-700 fill-blue-700" : "text-secondary"
@@ -69,9 +69,8 @@ export default function TabContentLayout({ data }: { data: any }) {
           isReverse={false}
           showLeftSection={true}
           showRightSection={true}
-          leftContent={<LeftContent data={data?.tabComponentItems[selectedTab].leftSection.leftSectionItems} />}
-          rightContent={<RightContent isReverse={false} data={data?.tabComponentItems[selectedTab].rightSection.rightSectionItems} />}
-        />
+          leftContent={<LeftContent data={data?.tabComponentItems[selectedTab].leftSection?.leftSectionItems} />}
+          rightContent={<RightContent isReverse={false} data={data?.tabComponentItems[selectedTab].rightSection?.rightSectionItems} />} textbackground={""}        />
       </div>
     </div>
   );

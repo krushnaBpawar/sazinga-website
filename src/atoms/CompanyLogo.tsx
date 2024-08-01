@@ -6,7 +6,7 @@ export default function CompanyLogo({ url }: { url: string | undefined }) {
   if (!url) return undefined;
   return (
     <Image
-      className="cursor-pointer"
+      className="cursor-"
       onClick={() => {
         router.push("/");
       }}

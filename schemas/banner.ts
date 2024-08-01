@@ -1,6 +1,7 @@
 import { portableTextSchema } from "@files/schemas/common/portableTextSchema";
 
 import { SanitySchema } from "@/utility/types";
+import { buttonSchema } from "./common/buttonSchema";
 
 // schemas/pointer.js
 const banner: SanitySchema = {
@@ -18,7 +19,7 @@ const banner: SanitySchema = {
       title: "Banner Background",
       type: "string",
       options: {
-        list: ["Green", "LightBlue", "DarkBlue", "Blue", "Black", "Secondary", "White", "Transparent", "Alt","Gray"],
+        list: ["Green", "LightBlue", "DarkBlue", "Blue", "Black", "Secondary", "White", "Transparent", "Alt","Gray","DarkPink","Yellow"],
       },
     },
     {
@@ -50,6 +51,7 @@ const banner: SanitySchema = {
                   "Line Break",
                   "Testimonial Section",
                   "Form Embbed",
+                  "Buttons",
                 ],
               },
             },
@@ -128,6 +130,7 @@ const banner: SanitySchema = {
               ],
               hidden: ({ parent }: { parent: any }) => parent.sectionName !== "Text Block",
             },
+            
             {
               name: "imageCard",
               title: "Image Card",
@@ -242,6 +245,51 @@ const banner: SanitySchema = {
               type: "reference",
               to: [{ type: "formEmbbed" }],
               hidden: ({ parent }: { parent: any }) => parent.sectionName !== "Form Embbed",
+            },
+            {
+              name: "button",
+              title: "Buttons",
+              type: "object",
+              fields: [
+                {
+                  name: "buttonLayout",
+                  title: "Button Layout",
+                  type: "string",
+                  options: {
+                    list: ["row", "column"],
+                  },
+                },
+                {
+                  name: "showprimarybutton",
+                  title: "Show Primary Button",
+                  type: "boolean",
+                  description: "Toggle to show primary button",
+                },
+                {
+                  name: "primaryButton",
+                  title: "Primary Button",
+                  type: "document",
+                  fields: buttonSchema,
+                  hidden: ({ parent }: { parent: any }) =>
+                    parent && !parent.showprimarybutton,
+                },
+                {
+                  name: "showsecondarybutton",
+                  title: "Show Secondary Button",
+                  type: "boolean",
+                  description: "Toggle to show secondary button",
+                },
+                {
+                  name: "secondaryButton",
+                  title: "Secondary Button",
+                  type: "document",
+                  fields: buttonSchema,
+                  hidden: ({ parent }: { parent: any }) =>
+                    parent && !parent.showsecondarybutton,
+                },
+              ],
+              hidden: ({ parent }: { parent: any }) =>
+                parent.sectionName !== "Buttons",
             },
           ],
         },

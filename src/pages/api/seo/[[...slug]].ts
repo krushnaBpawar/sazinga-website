@@ -44,6 +44,7 @@ export default async function preview(
       page = await client.fetch("*[_id == $refId][0]", {
         refId: resourceData?.layout?._ref,
       });
+      console.log(page ,"page if ifififififif");
       if (!page) {
         throw new Error("Not found");
       }
@@ -69,6 +70,8 @@ export default async function preview(
       page = await client.fetch("*[_id == $refId][0]", {
         refId: blogData?.layout?._ref,
       });
+      console.log('console.log else iffffffff else else', page);
+      
       if (!page) throw new Error("Not found");
 
       const pageSections = page.sections.map((section) => {

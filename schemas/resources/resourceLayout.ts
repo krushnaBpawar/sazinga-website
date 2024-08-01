@@ -4,7 +4,7 @@ import { defineArrayMember, defineField, defineType } from "sanity";
 export default defineType({
   name: "resourceLayout",
   title: "Resource Layout",
-  // @ts-expect-error random TS Error but works fine
+  // ts-expect-error random TS Error but works fine
   icon: DashboardIcon,
   type: "document",
   fields: [

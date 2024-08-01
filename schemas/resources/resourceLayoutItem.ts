@@ -29,6 +29,9 @@ export default defineType({
           "Blogs Preview",
           "Blog Post",
           "Resource Items",
+          "Integrate Vertial Tab Component Layout",
+          "New Integrate Vertial Tab Component Layout",
+          "Inner Tab Component Layout",
         ],
       },
     },
@@ -148,6 +151,27 @@ export default defineType({
       hidden: ({ parent }: { parent: any }) =>
         parent.sectionName !== "Vertial Tab Component Layout",
     },
+    {
+      name: "integrateverticalTabComponentLayout",
+      title: "Integrate Vertial Tab Component Layout",
+      type: "integrateverticalTabComponentLayout",
+      hidden: ({ parent }: { parent: any }) =>
+        parent.sectionName !== "Integrate Vertial Tab Component Layout",
+    },
+    {
+      name: "newTabComponentLayout",
+      title: "New Tab Component Layout",
+      type: "newTabComponentLayout",
+      hidden: ({ parent }: { parent: any }) =>
+        parent.sectionName !== "New Tab Component Layout",
+    },
+    {
+      name: "innerTabComponentLayout",
+      title: "Inner Tab Component Layout",
+      type: "innerTabComponentLayout",
+      hidden: ({ parent }: { parent: any }) =>
+        parent.sectionName !== "Inner Tab Component Layout",
+    },    
     {
       name: "teamSection",
       title: "Team Section",

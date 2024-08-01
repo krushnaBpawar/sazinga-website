@@ -1,5 +1,6 @@
 import { portableTextSchema } from "@files/schemas/common/portableTextSchema";
 import { defineType, Rule } from "sanity";
+import { buttonSchema } from "./buttonSchema";
 
 export default defineType({
   name: "sectionItems",
@@ -40,6 +41,9 @@ export default defineType({
           "Blogs Preview",
           "All Blogs",
           "Resources",
+          "Integrate Vertial Tab Component Layout",
+          "New Tab Component Layout",
+          "Inner Tab Component Layout",
         ],
       },
       validation: (Rule: Rule) =>
@@ -293,6 +297,16 @@ export default defineType({
           of: portableTextSchema,
           description: "Text content for this block.",
         },
+        {
+          name: "primaryButton",
+          title: "Primary Button",
+          type: "document",
+          description:
+            "The primary button displayed in the navigation bar Optional.",
+          fields: buttonSchema,
+          required: false,
+          validation: (Rule: Rule) => Rule.optional(),
+        },
       ],
       hidden: ({ parent }: { parent: any }) =>
         parent.sectionName !== "Text Block",
@@ -315,6 +329,14 @@ export default defineType({
       hidden: ({ parent }) => parent.sectionName !== "Tab Component Layout",
     },
     {
+      name: "newTabComponentLayout",
+      title: "New Tab Component Layout",
+      type: "newTabComponentLayout",
+      description:
+        "Layout that involves tab components for categorizing content.",
+      hidden: ({ parent }) => parent.sectionName !== "New Tab Component Layout",
+    },
+    {
       name: "verticalTabComponentLayout",
       title: "Vertial Tab Component Layout",
       type: "verticalTabComponentLayout",
@@ -322,6 +344,23 @@ export default defineType({
         "Layout that involves tab components for categorizing content.",
       hidden: ({ parent }) => parent.sectionName !== "Vertial Tab Component Layout",
     },
+    {
+      name: "integrateverticalTabComponentLayout",
+      title: "Integrate Vertial Tab Component Layout",
+      type: "integrateverticalTabComponentLayout",
+      description:
+        "Layout that involves tab components for categorizing content.",
+      hidden: ({ parent }) => parent.sectionName !== "Integrate Vertial Tab Component Layout",
+    },
+    {
+      name: "innerTabComponentLayout",
+      title: "Inner Tab Component Layout",
+      type: "innerTabComponentLayout",
+      description:
+        "Layout that involves tab components for categorizing content.",
+      hidden: ({ parent }) => parent.sectionName !== "Inner Tab Component Layout",
+    },
+    
     {
       name: "teamSection",
       title: "Team Section",
@@ -347,3 +386,4 @@ export default defineType({
     },
   ],
 });
+

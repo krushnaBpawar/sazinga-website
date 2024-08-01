@@ -19,7 +19,7 @@ export default function VerticalTabContentLayout({ data }: { data: any }) {
                             data?.tabComponentItems.map((item: any, index: number) => (
                                 <div
                                     key={`${index}-tabItems`}
-                                    className={`flex tabular items-center  cursor-pointer  font-medium min-w-fit pb-1 ${data?.tabComponentItems[selectedTab].tabName === item.tabName ? " border-blue-700 bg-[#B8F5E6] h-16 fill-blue-700" : "text-secondary"
+                                    className={`flex tabular items-center  cursor-pointer  font-medium min-w-fit pb-1 ${data?.tabComponentItems[selectedTab]?.tabName === item.tabName ? " border-blue-700 bg-[#B8F5E6] h-16 fill-blue-700" : "text-secondary"
                                         }`}
                                     onClick={() => {
                                         setSelectedTab(index);

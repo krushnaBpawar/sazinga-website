@@ -73,6 +73,7 @@ const config: Config = {
         blue: "#D1E0FF",
         green: "#E6F4D7",
         black: "#171717",
+        DarkPink:"DarkBlue",
         // buttonBg
         "btn-primary": "#0C84B8",
         "btn-primary-hover": "#0b729e",

@@ -10,7 +10,7 @@ import blogLayout from "./blogLayout";
 export default defineType({
   name: "post",
   title: "Blog Post",
-  // @ts-expect-error random TS Error but works fine
+  // ts-expect-error random TS Error but works fine
   icon: BookIcon,
   type: "document",
   fields: [
@@ -27,7 +27,7 @@ export default defineType({
       options: {
         source: "title",
         maxLength: 96,
-        isUnique: (value, context) => context.defaultIsUnique(value, context),
+        isUnique: (value: any, context: any) => context.defaultIsUnique(value, context),
       },
       validation: (rule) => rule.required(),
     }),

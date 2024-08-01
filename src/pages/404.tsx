@@ -79,3 +79,7 @@ export default function NotFoundPage({
     </>
   );
 }
+
+export  const exampleComp = () =>{
+  
+} 

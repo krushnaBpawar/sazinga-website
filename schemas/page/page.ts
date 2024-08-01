@@ -4,7 +4,7 @@ import { defineArrayMember, defineField, defineType } from "sanity";
 export default defineType({
   name: "page",
   title: "Pages",
-  // @ts-expect-error random TS Error but works fine
+  // ts-expect-error random TS Error but works fine
   icon: DashboardIcon,
   type: "document",
   fields: [
@@ -30,7 +30,7 @@ export default defineType({
       options: {
         source: "pageName",
         maxLength: 96,
-        isUnique: (value, context) => context.defaultIsUnique(value, context),
+        isUnique: (value:any, context:any) => context.defaultIsUnique(value, context),
       },
       validation: (Rule) => Rule.required(),
     }),

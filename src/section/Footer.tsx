@@ -16,12 +16,13 @@ export default function Footer({ data }: { data: any }) {
           {data?.showPrimaryFooter && (
             <div className="outerContainer flex flex-col md:flex-row flex-wrap items-start justify-between mx-auto pb-16 pt-[90px]">
               <div className="flex flex-col w-full lg:w-[45%] xl:w-[30%]">
-                <CompanyLogo url={getURL(leftSection?.logo.asset._ref)?.url()} />
+                <CompanyLogo url={getURL(leftSection?.logo?.asset._ref)?.url()} />
                 <p className="text-p16 w-[75%] mt-4 text-400">{leftSection?.description}</p>
+                <p className="text-p16 mt-4 text-400">{leftSection.phone}</p>
+
                 <a href={`mailto:${leftSection?.email}`} className="text-p16 mt-4 text-400">
                   {leftSection?.email}
                 </a>
-                {/* <p className="text-p16 mt-4 text-400">{leftSection.phone}</p> */}
               </div>
               <div className="flex flex-col sm:flex-row flex-wrap sm:justify-between xl:justify-evenly w-full lg:w-[55%] xl:w-5/12 gap-6 mt-6 lg:mt-0">
                 {rightSection?.map((item: any) => {
@@ -59,7 +60,7 @@ export default function Footer({ data }: { data: any }) {
               <div className="outerContainer flex flex-col md:flex-row justify-between md:items-center py-5 gap-4 h-full mx-auto">
                 <div className="flex flex-col md:flex-row md:items-center gap-6 text-p16">
                   <p>{secondaryFooter.copyright}</p>
-                  {secondaryFooter.links.map((item: any) => {
+                  {secondaryFooter.links?.map((item: any) => {
                     return (
                       <a key={item._key} href={item.link} className="text-p16" target="_blank" rel="noreferrer">
                         {item.title}

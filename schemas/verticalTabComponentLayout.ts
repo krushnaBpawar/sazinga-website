@@ -32,6 +32,11 @@ export default defineType({
           type: "object",
           fields: [
             {
+              name: "headingName",
+              title: "Heading Name",
+              type: "string",
+            },
+            {
               name: "tabName",
               title: "Tab Name",
               type: "string",

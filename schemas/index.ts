@@ -40,6 +40,10 @@ import twoColumnLayout from "@files/schemas/twoColumnLayout/twoColumnLayout";
 import allBlogs from "./blogs/allBlogs";
 import blogLayout from "./blogs/blogLayout";
 import blogLayoutItems from "./blogs/blogLayoutItems";
+import integrateverticalTabComponentLayout from "@files/schemas/integrateverticalTabComponentLayout";
+import newTabComponentLayout from "./newTabComponentLayout";
+import innerTabComponentLayout from "./innerTabComponentLayout";
+
 export const schemaTypes = [
   navbar,
   footer,
@@ -84,4 +88,7 @@ export const schemaTypes = [
   resourceLayout,
   resourceLayoutItem,
   forms,
+  integrateverticalTabComponentLayout,
+  newTabComponentLayout,
+  innerTabComponentLayout,
 ];
